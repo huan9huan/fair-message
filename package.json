@@ -8,6 +8,7 @@
     "firefox-build": "cross-env TARGET=firefox gulp",
     "build": "cross-env NODE_ENV=production npm run chrome-build && cross-env NODE_ENV=production npm run opera-build && cross-env NODE_ENV=production npm run firefox-build",
     "start": "cross-env TARGET=chrome gulp watch",
+    "chrome-watch": "cross-env TARGET=chrome gulp watch",
     "opera-watch": "cross-env TARGET=opera gulp watch",
     "firefox-watch": "cross-env TARGET=firefox gulp watch",
     "chrome-dist": "cross-env NODE_ENV=production cross-env TARGET=chrome gulp dist",

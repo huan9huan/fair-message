@@ -64,8 +64,8 @@ function executeWeibo() {
       });
   });
   setInterval(function(){
-    var newDetails = document.querySelectorAll(".WB_feed_detail");
-    if(newDetails.length !== details.length){
+  var newDetails = document.querySelectorAll(".WB_feed_detail");
+    if(newDetails && newDetails.length !== details.length){
       executeWeibo();
     }
   } ,INTERVAL);

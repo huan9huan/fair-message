@@ -44,7 +44,6 @@ var renderContent = (data) => {
     renderMessage("Sorry, could not connect with page")
   }
 }
-
 ext.tabs.query({active: true, currentWindow: true}, function(tabs) {
   var activeTab = tabs[0];
   var url = activeTab.url;
